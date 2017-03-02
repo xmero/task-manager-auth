@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    link(rel="stylesheet", href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+  body
+    if user
+      h3 You are logged as #{ user.username } w/ id #{ user._id }
+    else
+      h3 You are NOT logged!
+    block content
