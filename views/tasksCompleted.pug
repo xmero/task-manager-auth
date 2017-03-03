@@ -8,7 +8,6 @@ block content
   ul.list
     each task in tasks
       li.list-tasks 
-        a(href='/admin/task/complete/' + task._id, class="button done") Complete
         p #{task.name} from #{task.userId}
-        span= moment(task.createdAt).format('YYYY/MM/DD hh:mm:ss')
+        span= moment(task.completedAt).format('YYYY/MM/DD hh:mm:ss')
         a(href='/admin/tasks/delete/' + task._id,class="button delete" ) Delete

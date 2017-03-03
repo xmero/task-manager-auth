@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+li div {
+    display: inline;
+}
+
+.list-tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.task {
+    border: 1px dashed grey;
+    padding: 1px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.button {
+    padding: 5px;
+    font-size: 8px;
+    border-radius: 15px;
+    color: white;
+    height: 20px
+}
+
+.date {
+    color: grey;
+    padding-right: 10px;
+}
+
+.done {
+    background-color: green;
+    margin-right: 15px;
+}
+
+.delete {
+    background-color: red;
+    margin-left: 15px;
+}
+
+.done:hover {
+    font-size: 10px;
+    color: white;
+}
+
+.delete:hover {
+    font-size: 10px;
+    color: white;
+}
+
+.addTask {
+    background-color: blue;
+    font-size: 10px;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.nav-link {
+color: white;
+text-decoration: none;
+}
+
+
+.nav-link:hover {
+color: grey;
+}
+
+.underline{
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.main-form{
+  margin-top: 15px;
+}

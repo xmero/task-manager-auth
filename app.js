@@ -10,6 +10,8 @@ const adminSectionRouter = require('./routes/admin')
 const PORT = 3000
 const app = express()
 
+app.locals.moment = require('moment')
+
 app.set('view engine', 'pug')
 app.use( express.static('public') )
 
